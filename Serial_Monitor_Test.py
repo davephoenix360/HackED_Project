@@ -11,7 +11,7 @@ for port in ports:
     portList.append(str(port))
     print(str(port))
     
-val = 4
+val = 3
 
 for x in range(len(portList)):
     if portList[x].startswith("COM" + str(val)):
@@ -37,10 +37,10 @@ while True and checker < 1:
     #print(test)
     #print(test.encode('utf'))
     #time.sleep(1)
-    serialInst.write(directions.encode('utf-8')) #send origin
+    serialInst.write(directions.encode('utf-8'))
     #time.sleep(1)
-    #mine = serialInst.readline().decode('utf-8').strip() # receive directions
-    #print(mine)
+    mine = serialInst.readline().decode('utf-8').strip() # receive directions
+    print(mine)
     #serialInst.readline() # receive origin
     
     #if mine == "directions":
