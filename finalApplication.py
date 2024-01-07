@@ -3,7 +3,7 @@ import folium
 #from functools import reduce
 #import operator
 import googlemaps
-import api_keys
+import api.api_keys as api_keys
 
 GOOGLE_API_KEY = api_keys.GOOGLE_API_KEY
 google_client = googlemaps.Client(GOOGLE_API_KEY)
@@ -54,4 +54,5 @@ def simplify_drections(directions):
 
 #print(get_Geocode("9005 112 ST NW", "Edmonton", "Alberta", "Canada"))
 #my_directions = simplify_drections(get_directions("9005 112 ST NW", "9120 116 St NW T6G 2V4"))
+#print(my_directions)
 #print(get_Geocode("9005 112 ST NW"))
